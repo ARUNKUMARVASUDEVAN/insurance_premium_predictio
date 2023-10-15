@@ -1,0 +1,4 @@
+[2023-10-15 20:46:43,967] 24 root -INFO -Data ingestion starts
+[2023-10-15 20:46:43,967] 28 root -INFO -Dataset readed
+[2023-10-15 20:46:44,006] 17 root -INFO -fetching data from Mongo DB has started
+[2023-10-15 20:46:44,072] 57 root -INFO -Exception occured at Data Ingestion
