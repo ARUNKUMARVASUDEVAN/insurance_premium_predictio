@@ -55,6 +55,7 @@ if button:
 
     )
     
+    
     final_new_data=data.get_data_as_dataframe()
     predict_pipeline=PredictPipeline()
     pred=predict_pipeline.predict(final_new_data)
