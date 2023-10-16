@@ -1,0 +1,37 @@
+[2023-10-16 09:44:11,844] 24 root -INFO -Data ingestion starts
+[2023-10-16 09:44:11,844] 28 root -INFO -Dataset readed
+[2023-10-16 09:44:11,844] 18 root -INFO -fetching data from Mongo DB has started
+[2023-10-16 09:44:11,864] 38 root -INFO -Train test split
+[2023-10-16 09:44:11,867] 41 root -INFO -X_train DataFrame Head:
+      age     sex   bmi  children smoker     region
+1322   62    male  38.8         0     no  southeast
+505    37    male  30.9         3     no  northwest
+1121   46    male  38.2         2     no  southeast
+674    44  female  43.9         2    yes  southeast
+119    37  female  23.4         2     no  northwest
+[2023-10-16 09:44:11,871] 49 root -INFO -Ingestion of data completed
+[2023-10-16 09:44:11,882] 64 root -INFO -Data transformastion statrts
+[2023-10-16 09:44:11,897] 67 root -INFO -Read train and test data
+[2023-10-16 09:44:11,899] 68 root -INFO -Train DataFrame head
+   age     sex   bmi  children smoker     region  expenses
+0   62    male  38.8         0     no  southeast  12981.35
+1   37    male  30.9         3     no  northwest   6796.86
+2   46    male  38.2         2     no  southeast   8347.16
+3   44  female  43.9         2    yes  southeast  46200.99
+4   37  female  23.4         2     no  northwest   6686.43
+[2023-10-16 09:44:11,900] 69 root -INFO -Test DataFrame Head:
+   age     sex   bmi  children smoker     region  expenses
+0   36  female  25.8         0     no  northwest   5266.37
+1   36  female  25.9         1     no  southwest   5472.45
+2   52  female  23.2         0     no  northeast  10197.77
+3   36    male  28.0         1    yes  northeast  20773.63
+4   45  female  35.3         0     no  southwest   7348.14
+[2023-10-16 09:44:11,900] 70 root -INFO -starting Pipeline
+[2023-10-16 09:44:11,900] 28 root -INFO -Data Transformation initiated
+[2023-10-16 09:44:11,900] 34 root -INFO -Pipeline has started
+[2023-10-16 09:44:11,900] 74 root -INFO -Splitting train data as input target
+[2023-10-16 09:44:11,911] 85 root -INFO -Pipeline is Completed
+[2023-10-16 09:44:11,912] 90 root -INFO -Data Transformed
+[2023-10-16 09:44:11,912] 32 root -INFO -Splitting Dependent and Independent Variable
+[2023-10-16 09:44:13,101] 51 root -INFO -Model Report :{'LinearRegression': (0.7326549357293952, 3658980254.529964), 'Ridge': (0.7327291835472984, 3657964072.3147035), 'Lasso': (0.7326790775990446, 3658649840.2595706), 'Support vector Machine': (-0.17924458074660365, 16139563481.321081), 'DTR': (0.629333973960549, 5073067924.42087), 'RandomForest': (0.8129991906553876, 2559360019.755159), 'Neighbors': (0.7927803283607704, 2836082607.1233053), 'Gaussion': (-856.3594392398751, 11734128205330.453), 'Neural_network': (-1.3069989046057606, 31574412874.256588), 'BayesianRidge': (0.7328027979209547, 3656956559.644168)}
+[2023-10-16 09:44:13,102] 57 root -INFO -Best Model Found,Model Name:RandomForest,accuracy:(0.8129991906553876, 2559360019.755159)
