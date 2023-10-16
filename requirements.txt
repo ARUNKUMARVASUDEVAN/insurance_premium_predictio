@@ -4,5 +4,6 @@ matplotlib
 streamlit
 pymongo
 seaborn
-sklearn
+scikit-learn
+sys
 -e .
