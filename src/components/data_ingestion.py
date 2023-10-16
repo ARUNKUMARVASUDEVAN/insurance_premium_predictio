@@ -9,7 +9,7 @@ import sys
 from dataclasses import dataclass
 from src.utils import unnecessary
 from sklearn.model_selection import train_test_split
-
+from src.components.data_transformation import DataTransformation
 @dataclass
 class DataIngestionconfig:
     train_data_path:str=os.path.join('artifacts','train.csv')
@@ -61,4 +61,6 @@ class DataIngestion:
 if __name__=='__main__':
     obj=DataIngestion()
     train_data,test_data=obj.initiate_data_ingestion()
+    data_transformer=DataTransformation()
+    input_column_train_arr,input_column_test_arr,target_column_train_df,target_column_test_df,preprocessor_obj_path=data_transformer.initiate_data_tarnsformation("D:/internship/insurance_predicton/artifacts/train.csv","D:/internship/insurance_predicton/artifacts/test.csv")
     
