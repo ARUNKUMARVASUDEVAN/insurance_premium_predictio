@@ -5,5 +5,3 @@ streamlit
 pymongo
 seaborn
 scikit-learn
-sys
--e .
