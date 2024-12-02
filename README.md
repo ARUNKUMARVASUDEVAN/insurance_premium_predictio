@@ -1,5 +1,6 @@
 
 # 📈 Insurance Premium Prediction
+---
 
 The objective of this project is to develop a predictive model that can accurately estimate the Insurance Premium of adults based on various demographic, educational, and occupational features. The model should analyze a given individual's characteristics and provide a prediction of insurance premium per year
 
